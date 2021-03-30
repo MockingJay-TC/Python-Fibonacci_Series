@@ -25,7 +25,7 @@ DATA_FOLDER = "data"
 product_file =  read_data(os.path.join(BASE_DIRECTORY,DATA_FOLDER,'products.csv'))
 transaction_file=  read_data(os.path.join(BASE_DIRECTORY, DATA_FOLDER,'transactions.csv'))
 
-class Analysis():
+class Analysis():   
     def __init__(self, file = None):
         self.file = file
         
@@ -149,3 +149,4 @@ data = analyze.read_data()
 analyze.dimension(analyze.read_data())
 analyze.unique(data, column='product_class')
 analyze.info(data)
+
